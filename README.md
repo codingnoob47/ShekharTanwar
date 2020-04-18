@@ -1,5 +1,6 @@
 # Project Focus
-Collection of my Data Science Projects, convering problems in the areas of :
+
+The Projects Are Built On The Following Areas :
 
  - Natural Language Processing and Text Mining
  - Time Series Forecasting
