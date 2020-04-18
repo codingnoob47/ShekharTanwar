@@ -1,4 +1,4 @@
-# TimeSeries_Projects
+# Time Series Projects
 
 ## Rossmann_Stores
 
