@@ -19,17 +19,12 @@ The project's goal is to understand sales distribution by the different store ty
 
 The Analysis was focussed on understanding the following aspects of the stores:
 
-A) Revenue Collection 
-
-B) Summary Statistic of Sales by StoreType
-
-C) Store Operational Days
-  
-  C1) Effect of Holidays : StateHoliday 
-  
-  C2) Effect of Holidays : SchoolHoliday
-  
-  C3) Effect of Promo on Sales by Store
+1) Revenue Collection 
+2) Summary Statistic of Sales by StoreType
+3) Store Operational Days
+  1.1) Effect of Holidays : StateHoliday 
+  1.2) Effect of Holidays : SchoolHoliday
+  1.3) Effect of Promo on Sales by Store
 
 The results of the analysis are as follows : 
 
@@ -40,33 +35,23 @@ The results of the analysis are as follows :
 #### Summary Statistic of Sales by StoreType :
 
 2) Store B makes the highest average sales over the timeframe
-
 3) There is a lot of variability in the sales of Store B
-
 4) The minimum and maximum sales are made by A
-
 5) Store A has the highest number of visitors, and B had the least number of visitors
-
 6) On Average, store B has the highest number of visitors and also had the highest variability
-
 7) Store D had the highest sales/customer followed by A,C and B
 
 #### Store Operational Days : 
 
 8) Store C is closed on the 7th day of the week
-
 9) Store B seems to have made the most sales on Sunday, followed by Store A and lastly by D
-
 10) There is a sharp decline in sales from Saturday to Sunday for both stores A and D
 
 #### Effect of Holidays : StateHoliday
 
 11) Store B earned the maximum on the Public holiday, followed by A, D and C in that order
-
 12) Store B earned the maximum on the Easter holiday, followed by A and D in that order
-
 13) Store B earned the maximum on the Christmas holiday, followed by A and D in that order
-
 14) Store C didn't earn anything on Easter and Christmas holiday
 
 #### Effect of Holidays : SchoolHoliday
@@ -82,7 +67,6 @@ The results of the analysis are as follows :
 The following modelling techniques were used for predicting sales numbers : 
 
 1) Persistence Model
-
 2) ARIMA Model
 
 Methodlogy Followed : Simplified 
@@ -90,7 +74,6 @@ Methodlogy Followed : Simplified
 The forecasting was was applied and tested at two levels : 
 
 1) Weekly Level sales Data
-
 2) Daily Level Sales Data
 
 ### Weekly Level Sales Data : Persistence Model & Grid Search ARIMA [Store A] 
