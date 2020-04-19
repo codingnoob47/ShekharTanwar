@@ -4,3 +4,4 @@
 
  - Natural Language Processing and Text Mining
  - Time Series Forecasting
+ - Visualization
