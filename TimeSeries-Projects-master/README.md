@@ -68,6 +68,8 @@ The forecasting was was applied and tested at two levels :
 
 The Weekly Level Sales data was tested for stationarity. Further the ADF test for Weekly Level data resulted in the following Observation :
 
+
+
 #### The ADF statistic is far less than the value at 1% significance level, and thus we can safely reject the null Hypothesis which assumes that the time series is non-stationary, and conclude that we have enough statistical evidence to assume that our time series is stationary
 
 Next, the seasonalty and trend patterns were observed in the dataset and the following observations were made : 
