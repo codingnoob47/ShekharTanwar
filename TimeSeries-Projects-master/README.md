@@ -6,7 +6,7 @@
 3) Monthly Sales Of French Champagne
 4) Rossmann Stores
 
-## NOTE : This Readme Will Dicuss The Following Project :
+### NOTE : This Readme Will Dicuss The Following Project :
 
 ## Rossmann Stores Forecasting
 
@@ -79,7 +79,7 @@ The forecasting was was applied and tested at two levels :
 ![](images/Rossman/Weekly_overview.png)
 
 
-#### The Weekly Level Sales data was tested for stationarity. Further the ADF test for Weekly Level data resulted in the following Results :
+#### ADF Test & Stationarity Analysis
 
 ADF Statistic -10.506582277946958
 
@@ -91,21 +91,28 @@ p Value 1.050461992521558e-18
 
 10% : -2.578407034974382
 
-#### And the following Observation : 
+#### Observation : 
 
 The ADF statistic is far less than the value at 1% significance level, and thus we can safely reject the null Hypothesis which assumes that the time series is non-stationary, and conclude that we have enough statistical evidence to assume that our time series is stationary
 
-Next, the seasonalty and trend patterns were observed in the dataset and the following observations were made : 
+#### Seasonaility & Trend Analysis : 
 
 ![](images/Rossman/Weekly_Seasonlaity_Trends.png)
 
-#### The time series takes all the data as trend, there is seasonality present in the dataset and there is no residual noice present in the dataset either. The current time series is non-stationary and thus for forecasting we'll have to make it stationary, by differencing
+#### Observation : 
+
+The time series takes all the data as trend, there is seasonality present in the dataset and there is no residual noice present in the dataset either. The current time series is non-stationary and thus for forecasting we'll have to make it stationary, by differencing
 
 
-Next, the dataset was tested for Gaussian distribution and for weekly level data, the data seemed gaussian thus no power transformation was applied on the dataset. 
+#### Testing For Gaussian Distribution 
 
 
 ![](images/Rossman/Weekly_Gaussian.png)
+
+
+#### Observation : 
+
+The data seemed gaussian thus no power transformation was applied on the dataset. 
 
 The residuals of the predictions made were further used for bias correction and to reduce the overall residula error of the model. 
 
@@ -113,6 +120,7 @@ Finally to improve over the persistence model, the grid search ARIMA was applied
 
 ### Daily Level Sales Data : Persistence Model & Grid Search ARIMA [Store C] 
 
+#### ADF Test & Stationarity Analysis
 The ADF Test was again applied on the dataset and the ADF statistic value being lower than the 1% value, resulted in the rejection of the NULL HYpothesis which assumed that the series is non-stationary
 
 ADF Statistic -5.399623337824002
@@ -126,15 +134,25 @@ p Value 3.3933795244320705e-06
 10% : -2.5687805115003
 
 
-The Seasonality and Trend analysis didn't return any patterns either and thus any differencing to remove these trends wasn't applied. Next, the appplication of the persistene model resulted in better predictions than the Grid Search ARIMA at the weekly level and thus proving a point that daily level data would be a better starting point over weekly level data.
+#### Seasonaility & Trend Analysis : 
 
 ![](images/Rossman/Daily_Seasonaility_Trends.png)
 
+#### Observation : 
 
-For daily level data the curve was not gaussian in nature, and thus power transformation's application proved out to be helpful.
+Seasonaility & Trend Analysis didn't return any patterns either and thus any differencing to remove these trends wasn't applied. 
 
+Next, the appplication of the persistene model resulted in better predictions than the Grid Search ARIMA at the weekly level and thus proving a point that daily level data would be a better starting point over weekly level data.
+
+#### Testing For Gaussian Distribution 
 
 ![](images/Rossman/Daily_Gaussian.png)
+
+#### Observation : 
+
+For daily level data the curve was not gaussian in nature, and thus power transformation's application proved out to be helpful
+
+#### AutoCorrelation & PartialAutocorrelation Plots : p & q values
 
 The Autocorrelation and partial Autocorrelation Plots revealed that p value ranges from 0 to 17 and q value ranges from 0 to 10.
 
@@ -145,13 +163,11 @@ The Autocorrelation and partial Autocorrelation Plots revealed that p value rang
 Finally the Grid Search ARIMA was applied on the dataset to improve the base persistence model, and the residual error results
 were adjusted back in the model to account for bias correcton and make predictions with minimized residual errors (sales figure) per prediction.
 
-### Performance On Test Set :
-
+#### Performance On Test Set :
 
 ![](images/Rossman/Daily_Test_Set.png)
 
-
-### Performance on Validation Set :
+#### Performance on Validation Set :
 
 ![](images/Rossman/Daily_Validation.png)
 
