@@ -6,7 +6,7 @@
 3) Monthly Sales Of French Champagne
 4) Rossmann Stores
 
-# NOTE : This Readme Will Dicuss The Following Project :
+## NOTE : This Readme Will Dicuss The Following Project :
 
 ## Rossmann Stores Forecasting
 
