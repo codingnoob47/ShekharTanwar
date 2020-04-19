@@ -11,13 +11,13 @@ The Subfolders have projects on the following NLP Problems :
 
 ## NLP Projects 
 
-1) Parts Of Speech Tagging :  HMM Tagger ( Hidden Markov Model Tagger)
+1. Parts Of Speech Tagging :  HMM Tagger ( Hidden Markov Model Tagger)
 
 Usage - Simple Description & Applications : 
 
 In corpus linguistics, part-of-speech tagging (POS tagging or PoS tagging or POST), also called grammatical tagging or word-category disambiguation, is the process of marking up a word in a text (corpus) as corresponding to a particular part of speech, based on both its definition and its context — i.e., its relationship with adjacent and related words in a phrase, sentence, or paragraph. A simplified form of this is commonly taught to school-age children, in the identification of words as nouns, verbs, adjectives, adverbs, etc.
 
-2) Topic Modelling : Latent Dirichlet Allocation
+2. Topic Modelling : Latent Dirichlet Allocation
 
 Usage - Simple Description & Applications : 
 
@@ -25,24 +25,24 @@ Topic modeling is an unsupervised machine learning technique that's capable of s
 
 ## Neural Machine Translation Language Modelling Projects
 
-3) Neural Language Model - Text Generation
+3. Neural Language Model - Text Generation
 
 Usage - Applications : 
-  a) Machine Translation
-  b) Spell Correction
-  c) Speech Recognition
-  d) Summarization
-  e) Question Answering
-  f) Sentiment analysis
+1) Machine Translation
+2) Spell Correction
+3) Speech Recognition
+4) Summarization
+5) Question Answering
+6) Sentiment analysis
   
 4) Neural Machine Translation - Speech Translation
 
 The project can be expanded to the following areas :
 
 Usage - Applications : 
-  a) Text-to-speech Translation
-  b) Speech-to-text Translation
-  c) Speech-to-speech Translation
+1) Text-to-speech Translation
+2) Speech-to-text Translation
+3) Speech-to-speech Translation
 
 ## Text Classification Projects
 
@@ -57,8 +57,8 @@ The Experiments are as follows :
 7) n-gram CNN Model for Sentiment Analysis
 
 Usage - The projects can be expanded and applied in the following areas : 
- a) Tagging content or products using categories as a way to improve browsing or to identify related content on company website.
-b) Classifying customer feedback based on its sentiment to positive, negative or neutral (sentiment analysis)
-c) Classifying customer questions according what product or which part of the product architecture the question regards
-d) Classifying content in offer documents according to predefined criteria to for instance quality, price, schedule, etc.
-e) Classifying emails into non-spam and spam.
+1) Tagging content or products using categories as a way to improve browsing or to identify related content on company website.
+2) Classifying customer feedback based on its sentiment to positive, negative or neutral (sentiment analysis)
+3) Classifying customer questions according what product or which part of the product architecture the question regards
+4) Classifying content in offer documents according to predefined criteria to for instance quality, price, schedule, etc.
+5) Classifying emails into non-spam and spam.
