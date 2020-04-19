@@ -1,6 +1,13 @@
 # Time Series Projects
 
-## Rossmann_Stores
+## Projects in Sub Directory
+1)  Monthly Armed Robberies in Boston
+2) Annual Water usage in Baltimore
+3) Monthly Sales Of French Champagne
+4) Rossmann Stores
+
+## NOTE : This Readme will dicuss the Rossmann Stores Forecasting Project.
+
 
 ### Project Goal 
 
