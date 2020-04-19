@@ -167,7 +167,7 @@ were adjusted back in the model to account for bias correcton and make predictio
 
 ![](images/Rossman/Daily_Test_Set.png)
 
-#### Performance on Validation Set :
+#### Performance on ( Training + Test ) + Validation Set :
 
 ![](images/Rossman/Daily_Validation.png)
 
