@@ -1,104 +1,44 @@
-# Neural Machine-Translation/ Language-Modelling
+# Exploratory Data Analysis and Machine Learning 
 
 
-## Neural Language Model - Text Generation
+This section focusses on Statistical Exploratory Data Analysis and Machine Learning Tasks to solve some really intersting problems Namely :
 
-### Project Goal 
-
-Develop a language model to predict the next word in the sequence based on the specific words that have come 
-before it in the sequence. Internally, the task is to predict the probability of the next word in the sequence, 
-based on the words already observed in the sequence
-
-Neural Language Modelling finds its applications in the following areas :  
-1) Machine Translation
-2) Spell Correction 
-3) Speech Recognition
-4) Summarization
-5) Question Answering
-6) Sentiment analysis
-
-### Inner Working : Simplified
-
-The language modelling task performed here makes use of the text from "The Republic" written by Plato.
-
-The downloaded text book is stripped of the beggining and the end content, and the reamining text is passed through the data 
-preprocessing pipeline, which performs the following tasks: 
-
-a) Replace ‘-’ with a white space so we can split words better
-b) Split words based on white space
-c) Remove all punctuation from words to reduce the vocabulary size (e.g. ‘What?’ becomes ‘What’)
-d) Remove all words that are not alphabetic to remove standalone punctuation tokens
-e) Normalize all words to lowercase to reduce the vocabulary size
-
-Training the Language Model : 
-
-The model we will train is a neural language model. It has a few unique characteristics:
-a) It uses a distributed representation for words so that different words with similar meanings will have a similar representation
-b) It learns the representation at the same time as learning the model
-c) It learns to predict the probability for the next word using the context of the last 100 words
-
-We will use an Embedding Layer to learn the representation of words, and a Long Short-Term Memory (LSTM) recurrent neural 
-network to learn to predict words based on their context.
-
-The cleaned text is tokenized, meaning each word in the text is given a unique number and the words in each line are added to 
-the vocabulary list. This vocabulary file would be used to prepare embeddings for each word by the model.
+1) Imbalanced Classification :  Weighing Oversampling Techniques with Undersampling Techniques + Feature Engineering to boost model skill
+2) Unsupervised Sentiment Analysis (In Progress ):  Using a dot product of tf-idf score and polarity to determine the sentiment of a sentence and use that as a feature in modelling
+3) For a banking company using a Targetted Ad Campaign, Varying model decision threshold to Boost Precision and Recall values of a model, to efficiently identify customers with high probability of conversion while ensuring minimization of ad costs
+4) Explore what factors lead to conversion of a customer across different regions and providing a recommendation of strategizing the approach for each age group of customers in light of the medium to approach them.
 
 
-Model Architecture : 
+This section has the following projects : 
 
-a) Embedding Layer : To represent each word in a vectorized format
-b) LSTM Layer (Hidden Layer)
-c) LSTM Layer (Hidden Layer)
-d) Dense Layer (Hidden Layer)
-e) Dense Layer (Outer Layer)
+### 1) Product_Reviews : 
 
-Next, each sequence fed into the model would be uniform length (50 words) and we would then predict the most likely word
-following this sequence of 50 words, the model architecture is made dynamic to self train itself and include the predictions
-at time step T to include in the predictions for the time step T+1.
+A detailed study on a highly imbalanced dataset having customer Feedback, Ratings, Recommend Status and Many Engineered Features on Amazon Kindle
 
-## Neural Machine Translation
+The notebook aims at applying several Machine Learning Techniques to identify those customers which didn't recommend the product. Keeping Exploratory data analysis at heart, this notebook aims at creating a pipeline and tries several techniques to come up with features which could aid in identify customers who wouldn't recomment the product.
 
-### Project Goal
+The work is still in progress as I'm applying `Unsupervised Sentiment Analysis` on customer reviews to generate a score per review and use that as an additional feature along with other Engieenered Features in model building
 
-The Project Goal is to develop a text-text application for translating input sequences in one language to ouput sequences in 
-another language
 
-The project can be expanded to the following areas :
-1) Text-to-speech
-2) Speech-to-text
-3) Speech-to-speech
+### 2) BankMarketing :
 
-### Inner Working : Simplified
+For a banking compaign running an Advertisement campaign, this project aims at identifying the customers most likely to convert and identofy an approach to minimize cost of advertiment while ensuring the company squeezes out the maximum money from the customer base. The project applies Ensemble Learning Methods to solve the problem, but can further be expanded to apply Neural Net further an alternative approach if cost per ad varies.
 
-The dataset used here makes use of German to English terms for language learning available from http://www.manythings.org/.
 
-The text phrases are passed through a preprocessing pipeline which does the following steps : 
+### 3) Customer Conversion Rate :
 
-1) Remove all non-printable characters.
-2) Remove all punctuation characters.
-3) Normalize all Unicode characters to ASCII (e.g. Latin characters)
-4) Normalize the case to lowercase.
-5) Remove any remaining tokens that are not alphabetic
+Keeping Exploratory Data Analysis at heart, this project aims at seeking answers to conversion of visitors to a website to potential customers in different regions and the means of targetting. 
 
-The Cleaned text is then tokenized ( as previously described ) and then the tokenized text is converted into sequence of 
-numbers and then padded to the maximum sequence length to be passed into the model. We then use word embedding for the 
-input sequences and one hot encode the output sequences.
+The projects explores and finds answers to the following areas : 
 
-Model Architecture :
+a) The Conversion Distribution and advertisment impact by Region
 
-The model used here uses an encoder-decoder LSTM architecture.  In this architecture, the input sequence is encoded by a 
-front-end model called the encoder then decoded word by word by a backend model called the decoder.
+b) The Conversion Distribution by Age among different Regions
 
-The model is trained using the efficient Adam approach to stochastic gradient descent and minimizes the categorical loss 
-function because we have framed the prediction problem as multiclass classification.
+c) Does reaching out to old users lead to higher conversion as compared to new users
 
-The Layers Used are as follows : 
+d) Which source of advertiment leads to higher conversion across different Regions
 
-a) Embedding Layer
-b) Bidirectional LSTM ( Hidden Layer )
-c) LSTM ( Hidden Layer ) ( 3 stacks )
-d) Dropout ( 2 stacks )
-e) Dense Layer ( Output Layer )
+NOTE : Due to the class imbalance problem, I am builiding the model for this and the first project simultaneouly. to present a clean and organized work, The modelling part with the list of changing hyperparameters are performed in separate notebooks and the final model which beats the bechmakr in either case would be part of these notebooks
 
-The model developed translated german text to english with a bleu score of 0.15
 
