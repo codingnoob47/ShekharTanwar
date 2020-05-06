@@ -1,7 +1,7 @@
 # Data Science
 
 
-## The Following Are My Projects On The Areas I have Worked On : 
+## Focus Areas: 
 
 1) Decision Making Under Uncertainity
 
