@@ -1,7 +1,7 @@
 # Data Science
 
 
-## This Portfolio Contains Projects For the Areas Of My Interest
+## The Following Are My Projects On The Areas I have Worked On : 
 
 1) Decision Making Under Uncertainity
 
@@ -11,7 +11,7 @@
 
 4) Time Series Forecasting
 
-Some Of my Other Areas are : 
+Some Of my Other Interest Areas are : 
 
 - A/B Testing
 
