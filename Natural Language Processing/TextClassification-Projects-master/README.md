@@ -51,17 +51,6 @@ As each document is processed and curated for classification, each word in that 
 would later be used to develop a Deep Learning model for classifying those docuemtns which were used to test the performance
 of the model developed
 
-Meanwhile, as Machine Learning/ Deep Learning models work on numbers rather than text or any other data format, each word in 
-each document is given a number by a process known as Tokenization. These word-number pairing is then used to transform each
-sentence into a group of numbers  where each word is replaced by the number it was given initally during Tokenization.
-
-Next, as the sentences could vary in length they are transformed to uniform length sequences so that it becomes easy for the 
-model to process data fed into it.
-
-Model Configurations :
-
-a) Dense Layer ( hidden )
-b) Dense Layer ( output )
 
 As the model is trained, each word is converted into a vector ( known as word embedding ) and then those group of vectors are 
 classified into categories depending on the target label.
@@ -72,8 +61,7 @@ b) count
 c) tfidf	
 d) freq
 
-Based on the compuational effciency of my laptop, the entire dataset was trained 10 times for each configuration of BOW, and it's 
-performance of classifying text documents (using binary configuration) into the right category was 92.6%
+Based on the compuational effciency of my laptop, the entire dataset was trained 10 times for each configuration of BOW, and it's  performance of classifying text documents (using binary configuration) into the right category was 92.6%
 
 The model's performance could be easily lifted by training for longer durations using AWS or using a more deeper architecture.
 
@@ -132,8 +120,8 @@ Taking a final shot at improving the model's performance, this experiment focuss
 documents into their respective categories. Here, unlike the previous approach we use multiple input channels and parallaly 
 calculate embeddings to given an output label for each document.
 
-All the tasks performed prior to modl building are similar to the above experiment, however the model architecture varies 
-significantly, as is as follows : 
+All the tasks performed prior to model building are similar to the above experiment, however the model architecture varies 
+significantly, and is as follows : 
 
 a) Embedding Layer 1
 b) Convolutioanl 1D Layer 1
