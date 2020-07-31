@@ -5,7 +5,7 @@ This Sub Directory Contais the Following Folders :
 ## 1) NLP Projects 
 ## 2) Neural Machine Translation Language Modelling Projects
 ## 3) Text Classification Projects
-## 4) Document Search : Locality Sensitive Hashing
+## 4) Document Search : Locality Sensitive Hashing + KNN
 
 
 The Subfolders have projects on the following NLP Problems :
