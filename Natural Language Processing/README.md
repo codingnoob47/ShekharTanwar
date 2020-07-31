@@ -5,6 +5,7 @@ This Sub Directory Contais the Following Folders :
 ## 1) NLP Projects 
 ## 2) Neural Machine Translation Language Modelling Projects
 ## 3) Text Classification Projects
+## 4) Document Search : Locality Sensitive Hashing
 
 
 The Subfolders have projects on the following NLP Problems :
@@ -56,9 +57,20 @@ The Experiments are as follows :
 ### Embedding + CNN Model for Sentiment Analysis
 ### n-gram CNN Model for Sentiment Analysis
 
+
 Usage - The projects can be expanded and applied in the following areas : 
 1) Tagging content or products using categories as a way to improve browsing or to identify related content on company website.
 2) Classifying customer feedback based on its sentiment to positive, negative or neutral (sentiment analysis)
 3) Classifying customer questions according what product or which part of the product architecture the question regards
 4) Classifying content in offer documents according to predefined criteria to for instance quality, price, schedule, etc.
 5) Classifying emails into non-spam and spam.
+
+
+
+## Document Search using Sentence Embedding + Locality Sensitive Hashing + K Nearest Neghbour
+
+This sub folder contains my code of a document search architecture developed using Pretrained Glove Embeddings for words, which were then used to generate embeddings for the entire document they were a part of
+
+The architecture developed enables user to pass any text realted dataset to look out for similar documents having similar key words. The underlying working is dependent on matching documents with similar embeddings and using K nearest Neighbour to optimize search time
+
+Usage : The project can be modified to include custom created embeddings based on business problem and be used to develop a document search application for tagging similar health records, insurance claims notes and to significantly optimize any business related activity wherein users need to look through mounds of text related data to search for similar information
