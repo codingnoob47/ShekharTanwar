@@ -1,4 +1,5 @@
-# Data Science
+# Machine Learning
+
 
 
 ## Focus Areas: 
@@ -11,10 +12,4 @@
 
 4) Time Series Forecasting
 
-Some Of my Other Interest Areas are : 
-
-- A/B Testing
-
-- Product Data Science
-
-I am currently working on developing skills on these :)
+5) Computer Vision
